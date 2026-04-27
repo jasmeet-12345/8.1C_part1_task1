@@ -1,0 +1,56 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build Application') {
+            steps {
+                echo 'Stage 1: Build – Compile and package the project.'
+                echo 'Tool used: Maven (for build automation)'
+            }
+        }
+
+        stage('Testing Phase') {
+            steps {
+                echo 'Stage 2: Unit & Integration Testing – Validate modules and their interactions.'
+                echo 'Tools used: JUnit (unit testing) and Selenium (integration testing)'
+            }
+        }
+
+        stage('Static Code Analysis') {
+            steps {
+                echo 'Stage 3: Code Analysis – Check code quality and identify potential issues.'
+                echo 'Tool used: SonarQube'
+            }
+        }
+
+        stage('Vulnerability Scan') {
+            steps {
+                echo 'Stage 4: Security Scan – Detect security vulnerabilities in code and dependencies.'
+                echo 'Tools used: OWASP Dependency Check or Snyk'
+            }
+        }
+
+        stage('Deploy to Staging Environment') {
+            steps {
+                echo 'Stage 5: Staging Deployment – Deploy the application to a staging server.'
+                echo 'Tool used: AWS EC2 instance'
+            }
+        }
+
+        stage('Staging Integration Testing') {
+            steps {
+                echo 'Stage 6: Integration Testing on Staging – Test in a production-like setup.'
+                echo 'Tool used: Postman'
+            }
+        }
+
+        stage('Production Deployment') {
+            steps {
+                echo 'Stage 7: Production Deployment – Release the application to production.'
+                echo 'Tools used: AWS EC2 or Kubernetes'
+            }
+        }
+
+    }
+}
