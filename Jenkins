@@ -33,7 +33,7 @@ pipeline {
 
         stage('Deploy to Staging Environment') {
             steps {
-                echo 'Stage 5: Staging Deployment – Deploy the application to a staging server.'
+                echo 'Stage 5: Staging Deployment '
                 echo 'Tool used: AWS EC2 instance'
             }
         }
