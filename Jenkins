@@ -13,7 +13,7 @@ pipeline {
         stage('Testing Phase') {
             steps {
                 echo 'Stage 2: Unit & Integration Testing – Validate modules and their interactions.'
-                echo 'Tools used: JUnit  and Selenium'
+                echo 'Tools used: JUnit and Selenium'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
         stage('Vulnerability Scan') {
             steps {
                 echo 'Stage 4: Security Scan – Detect security vulnerabilities in code and dependencies.'
-                echo 'Tools used: OWASP Dependency Check or Snyk'
+                echo 'Tools used: OWASP Dependency'
             }
         }
 
