@@ -13,7 +13,7 @@ pipeline {
         stage('Testing Phase') {
             steps {
                 echo 'Stage 2: Unit & Integration Testing – Validate modules and their interactions.'
-                echo 'Tools used: JUnit (unit testing) and Selenium (integration testing)'
+                echo 'Tools used: JUnit  and Selenium'
             }
         }
 
